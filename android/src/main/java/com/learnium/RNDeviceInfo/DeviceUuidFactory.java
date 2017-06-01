@@ -30,7 +30,7 @@ public class DeviceUuidFactory {
 
                     } else {
 
-                        final String androidId = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID) + Build.SERIAL;
+                        final String androidId = Secure.getString(context.getContentResolver(), Secure.ANDROID_ID) + android.os.Build.SERIAL;
 
                         // Use the Android ID unless it's broken, in which case fallback on deviceId,
                         // unless it's not available, then fallback on a random number which we store
