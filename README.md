@@ -141,13 +141,16 @@ include ':app'
 
 (Thanks to @josephan for writing the instructions)
 
-## Device Name
-
-If you want to get the device name in Android add this to your `AndroidManifest.xml` (optional):
+## Permission
 
 ```xml
 ...
-<uses-permission android:name="android.permission.BLUETOOTH"/>
+<!-- (optional) If you want to get the device name in Android add this to your `AndroidManifest.xml` -->
+<uses-permission android:name="android.permission.BLUETOOTH"/> 
+
+
+<!-- (require) get uuid -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 ```
 
 ## Release Notes
